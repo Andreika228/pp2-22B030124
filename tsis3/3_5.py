@@ -23,16 +23,16 @@ y=int(input("Enter your balance: "))
 acc=Account(x,y)
 m= True
 while m:
-    c=input("What do you want to do: (Balance) (Deposit) (Withdraw) (Exit): ")
-    if c=='Balance':
+    v=input("What do you want to do: (Deposit) (Balance) (Withdraw) (Exit): ")
+    if v=='Balance':
         print(f"{acc.user}, your balance is: {acc.balance}")
-    elif c=='Deposit':
+    elif v=='Deposit':
         d=int(input(f"{acc.user}, how much do you want to top up your deposit? "))
         acc.deposit(d)
-    elif c=='Withdraw':
+    elif v=='Withdraw':
         d=int(input(f"{acc.user}, how much do you want to withdraw? "))
         acc.withdraw(d)
-    elif c=='Exit':
+    elif v=='Exit':
         print(f'{acc.user}, Thank you for using our banking system, come again, goodbye')
         m=False
     else:
