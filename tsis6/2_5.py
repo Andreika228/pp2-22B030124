@@ -1,6 +1,6 @@
-color = ['Red', 'Green', 'White', 'Black', 'Pink', 'Yellow']
+cars = ['Toyota', 'Buggatti', 'Audi', 'BMW', 'Ferrari', 'Hundai']
 with open('tester.txt', "w") as file:
-        for i in color:
+        for i in cars:
                 file.write("%s\n" % i)
 
 content = open('tester.txt')
