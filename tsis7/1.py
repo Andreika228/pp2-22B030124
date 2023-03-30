@@ -38,3 +38,4 @@ while running:
         if event.type==pygame.QUIT:
             running=False
             pygame.quit()
+    clock.tick(1)
