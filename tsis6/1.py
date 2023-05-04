@@ -5,4 +5,3 @@ def ret(list1):
     return mult    
 list1=[i for i in range(1,5)]
 print(ret(list1))
-print (list1)
